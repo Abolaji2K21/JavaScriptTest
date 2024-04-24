@@ -24,5 +24,12 @@ function mapTimeAndClass(array){
     })
 }
 
+function mapHealthyAndUnHealthyFruit(array) {
+    let healthyFood = array.filter(food=> food.isHealthy === true)
+    for(const name of healthyFood){
+        console.log(healthyFood.name)
+    }
+    return healthyFood;
+}
 
-module.exports = {mapTimeAndClass,mapNumberGreaterThanSeventy, mapNumberAndAddFiveToEachNumber,mapNumberAndSquareThenumbers}
+module.exports = {mapHealthyAndUnHealthyFruit,mapTimeAndClass,mapNumberGreaterThanSeventy, mapNumberAndAddFiveToEachNumber,mapNumberAndSquareThenumbers}

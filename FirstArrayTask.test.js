@@ -1,4 +1,4 @@
-let {mapTimeAndClass,mapNumberGreaterThanSeventy,mapNumberAndAddFiveToEachNumber,mapNumberAndSquareThenumbers} = require("./FirstArrayTask.js");
+let {mapHealthyAndUnHealthyFruit,mapTimeAndClass,mapNumberGreaterThanSeventy,mapNumberAndAddFiveToEachNumber,mapNumberAndSquareThenumbers} = require("./FirstArrayTask.js");
 
 
 
@@ -39,6 +39,31 @@ test("Filter Number and Then return Pm ", () => {
 
     expect(answer).toStrictEqual([ "3:00 PM", "7:00 PM" ])
   
+})
+
+
+test("Filter Number and Then return Pm ", () => {
+    let shoppingList = [
+        { name: 'Apples', category: 'Fruits', isHealthy: true },
+        { name: 'Potato Chips', category: 'Snacks', isHealthy: false },
+        { name: 'Carrots', category: 'Vegetables', isHealthy: true },
+        { name: 'Chocolate Bars', category: 'Sweets', isHealthy: false },
+        { name: 'Greek Yogurt', category: 'Dairy', isHealthy: true },
+        { name: 'Soda', category: 'Beverages', isHealthy: false }]
+
+     let answer = mapHealthyAndUnHealthyFruit(shoppingList)
+
+     let isHealthy = [
+        { name: 'Apples', category: 'Fruits', isHealthy: true },
+        { name: 'Carrots', category: 'Vegetables', isHealthy: true },
+        { name: 'Greek Yogurt', category: 'Dairy', isHealthy: true }
+
+     ]
+
+     expect(answer).toEqual(isHealthy)
+
+
+
 })
 
 

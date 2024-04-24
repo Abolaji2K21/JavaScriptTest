@@ -63,3 +63,6 @@ for(const value of beforeMath){
 }
 
 console.log(addedCalculation)
+
+
+
