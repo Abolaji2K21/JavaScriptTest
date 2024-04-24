@@ -1,0 +1,35 @@
+let Emily ={
+    name: "Emily",
+    book: ""
+}
+
+let Jack = {
+    name: "Jack",
+    book: ""
+}
+
+let Sophia = {
+    name: "Sophia",
+    book: ""
+}
+
+let Daniel = {
+    name: "Daniel",
+    book: ""
+}
+
+const members = [Emily, Jack, Sophia, Daniel];
+
+const books = ["PenIsUp", "PenIsDown", "OhOkaySir", "PenisFustrated"];
+
+
+function assignBook(persons, books){
+    let i = 0;
+    for (let person of persons){
+        person.book = books[i];
+        i++;
+    }
+    return persons;
+}
+let result = assignBook(members, books);
+console.log(result)
