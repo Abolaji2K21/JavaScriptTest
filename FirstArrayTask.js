@@ -13,6 +13,16 @@ function mapNumberAndSquareThenumbers(array){
 
 }
 
+function mapTimeAndClass(array){
+    return array.filter(time => {
+        for(let value in time){
+            if (time.endsWith("PM")){
+                return value;
+            }
+            
+        }
+    })
+}
 
 
-module.exports = {mapNumberGreaterThanSeventy, mapNumberAndAddFiveToEachNumber,mapNumberAndSquareThenumbers}
+module.exports = {mapTimeAndClass,mapNumberGreaterThanSeventy, mapNumberAndAddFiveToEachNumber,mapNumberAndSquareThenumbers}

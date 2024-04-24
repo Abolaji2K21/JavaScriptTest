@@ -33,3 +33,33 @@ function assignBook(persons, books){
 }
 let result = assignBook(members, books);
 console.log(result)
+
+
+let DavidObj = {
+
+    Groceries: 150,
+    diningOut: 100,
+    Transport: 50,
+    entertaingment: 80,
+}
+
+
+
+let beforeMath= [[DavidObj]]
+
+let addedCalculation= 0
+
+for(const value of beforeMath){
+    for(const index in value){
+        if((value[index] != null) && (value[index])){
+            addedCalculation += value[index].Groceries
+            addedCalculation += value[index].Transport
+            addedCalculation += value[index].diningOut
+            addedCalculation += value[index].entertaingment
+
+            
+         }
+    }
+}
+
+console.log(addedCalculation)

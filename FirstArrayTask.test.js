@@ -1,4 +1,4 @@
-let {mapNumberGreaterThanSeventy,mapNumberAndAddFiveToEachNumber,mapNumberAndSquareThenumbers} = require("./FirstArrayTask.js");
+let {mapTimeAndClass,mapNumberGreaterThanSeventy,mapNumberAndAddFiveToEachNumber,mapNumberAndSquareThenumbers} = require("./FirstArrayTask.js");
 
 
 
@@ -31,5 +31,14 @@ test("Filter Number and Then multiply by num ", () => {
   
 })
 
+test("Filter Number and Then return Pm ", () => {
+    let array = ["3:00 PM","4:00 AM ","7:00 PM"]
+
+    let answer = mapTimeAndClass(array)
+    console.log(answer)
+
+    expect(answer).toStrictEqual([ "3:00 PM", "7:00 PM" ])
+  
+})
 
 
